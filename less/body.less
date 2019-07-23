@@ -5,13 +5,20 @@
   html {
     font-size: 62.5%;
   }
-  
-  html, body {
-    font-size: 11px;
+
+  body {
+    font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
     background: @violet;
-    background-image: url(bg-desktop.svg);
     color: @white;
+    background-image: url('../images/bg-desktop1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media @mobile {
+      background-image: url('../images/bg-mobile.svg');
+      background-repeat: no-repeat;
+    }
   }
 
   header {
@@ -41,6 +48,18 @@
     padding-bottom: 10px;
   }
 
+  .containerA::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: @violet;
+      background-image: url('bg-desktop.svg');
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
+
   .main-content {
       display: flex;
       flex-direction: row;
@@ -49,7 +68,8 @@
   p {
     line-height: 1.5;
     font-size: 1.6rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    margin-right: 10px;
   }
   
   img {
@@ -71,6 +91,10 @@
       border-radius: 3rem;
       color: @violet;
       font-size: 16px;
+  }
+
+  .attribution {
+    font-size: 1rem;
   }
 
   footer {

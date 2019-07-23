@@ -132,13 +132,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: hsl(257, 40%, 49%);
   color: #FFFFFF;
-}
-.svgContainer {
-  background-image: url('bg-desktop.svg');
+  background-image: url('../images/bg-desktop1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width:375px) {
-  .svgContainer {
-    background-image: url('bg-mobile.svg');
+  body {
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
   }
 }
 header {
