@@ -1,0 +1,214 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  background: hsl(257, 40%, 49%);
+  color: #FFFFFF;
+}
+.svgContainer {
+  background-image: url('bg-desktop.svg');
+}
+@media (max-width:375px) {
+  .svgContainer {
+    background-image: url('bg-mobile.svg');
+  }
+}
+header {
+  margin: 40px;
+}
+a {
+  color: hsl(228, 45%, 44%);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.containerA::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url('bg-desktop.svg');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 20px;
+  margin-right: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.mock-container {
+  margin: 60px;
+}
+.reg-button {
+  background: #FFFFFF;
+  width: 140px;
+  height: 60px;
+  margin: 5px;
+  padding: 24px;
+  padding-left: 40px;
+  border-radius: 3rem;
+  color: hsl(257, 40%, 49%);
+  font-size: 16px;
+}
+.attribution {
+  font-size: 1rem;
+}
+footer {
+  font-size: 0.2rem;
+  text-align: center;
+}
